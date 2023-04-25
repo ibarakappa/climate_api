@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+         crossorigin="anonymous"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h1 class="title mb-4">天氣預報</h1>
+      <select aria-label="label for the select" name="city" id="city">
+         <option value="臺北市">臺北市</option>
+      </select>
+      <button onclick="location.href='./taiwan.html'" type="button">
+         全臺天氣
+      </button>
+      <!-- 氣象卡片 -->
+      <div class="card" style="width: 18rem">
+         <div class="text">
+            <h1 class="city"></h1>
+            <p class="wx"></p>
+            <div class="temp d-flex justify-content-center">
+               <p class="minT"></p>
+               <p></p>
+               <p class="maxT"></p>
+               <p class="C"></p>
+            </div>
+         </div>
+         <div class="icon"><i id="icon" class=""></i></div>
+      </div>
+
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+         crossorigin="anonymous"
+      ></script>
+      <script src="./main.js"></script>
+   </body>
+</html>
